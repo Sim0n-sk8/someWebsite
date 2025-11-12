@@ -1,65 +1,139 @@
+// pages/index.js
 import Image from "next/image";
+import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="container">
+      <Head>
+        <title>SoME - Social Media & Web Services</title>
+        <meta
+          name="description"
+          content="Modern social media management and website solutions for your business."
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+      </Head>
+
+      {/* HEADER / NAV */}
+      <header className="header">
+        <div className="logo">SoME</div>
+        <nav className="nav">
+          <Link href="#services">Services</Link>
+          <Link href="#prices">Prices</Link>
+          <Link href="#work">Work</Link>
+          <Link href="#testimonials">Testimonials</Link>
+          <Link href="#contact">Contact</Link>
+        </nav>
+        <button className="cta">Get Started</button>
+      </header>
+
+      {/* HERO / LANDING */}
+      <section className="hero">
+        <div className="hero-text">
+          <h1>Modern Social Media & Web Solutions</h1>
+          <p>We help businesses grow online with stunning websites and social media management.</p>
+          <button className="cta">Start Your Project</button>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="hero-image">
+          <Image src="/hero-image.png" alt="Social Media Growth" width={500} height={400} />
         </div>
-      </main>
+      </section>
+
+      {/* SERVICES */}
+      <section id="services" className="services">
+        <h2>Our Services</h2>
+        <div className="service-cards">
+          <div className="card">
+            <h3>Social Media Management</h3>
+            <p>Grow your brand with curated content, scheduling, and engagement.</p>
+          </div>
+          <div className="card">
+            <h3>Web Design & Development</h3>
+            <p>Modern, responsive websites tailored to your brand.</p>
+          </div>
+          <div className="card">
+            <h3>SEO & Analytics</h3>
+            <p>Boost your visibility and track performance with data-driven insights.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICES */}
+      <section id="prices" className="prices">
+        <h2>Pricing</h2>
+        <div className="price-cards">
+          <div className="card">
+            <h3>Starter</h3>
+            <p>$300 / month</p>
+            <ul>
+              <li>Social Media Management</li>
+              <li>Basic Website</li>
+            </ul>
+            <button className="cta">Select</button>
+          </div>
+          <div className="card">
+            <h3>Pro</h3>
+            <p>$600 / month</p>
+            <ul>
+              <li>Advanced Social Media</li>
+              <li>Custom Website</li>
+              <li>SEO & Analytics</li>
+            </ul>
+            <button className="cta">Select</button>
+          </div>
+          <div className="card">
+            <h3>Premium</h3>
+            <p>$1000 / month</p>
+            <ul>
+              <li>Full Social Media Management</li>
+              <li>Custom Web App</li>
+              <li>Brand Strategy</li>
+            </ul>
+            <button className="cta">Select</button>
+          </div>
+        </div>
+      </section>
+
+      {/* WORK / PREVIOUS PROJECTS */}
+      <section id="work" className="work">
+        <h2>Previous Work</h2>
+        <div className="work-gallery">
+          <Image src="/work1.png" alt="Project 1" width={300} height={200} />
+          <Image src="/work2.png" alt="Project 2" width={300} height={200} />
+          <Image src="/work3.png" alt="Project 3" width={300} height={200} />
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section id="testimonials" className="testimonials">
+        <h2>Testimonials</h2>
+        <div className="testimonial-cards">
+          <div className="card">
+            <p>"SoME transformed our online presence. Highly recommended!"</p>
+            <h4>- Alex P.</h4>
+          </div>
+          <div className="card">
+            <p>"The website they built is stunning and our engagement skyrocketed."</p>
+            <h4>- Maria S.</h4>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button className="cta" type="submit">Send Message</button>
+        </form>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="footer">
+        <p>&copy; 2025 SoME. All rights reserved.</p>
+      </footer>
     </div>
   );
 }

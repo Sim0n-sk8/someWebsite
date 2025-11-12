@@ -1,0 +1,7 @@
+[00:00:00.643] Server  LOG      ✓ Ready in 470ms
+[00:00:05.683] Server  LOG      ○ Compiling / ...
+[00:00:07.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.541] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/work2.png" "received" null
+[00:00:07.542] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/work3.png" "received" null
+[00:00:07.543] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/work1.png" "received" null
+[00:00:07.553] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/hero-image.png" "received" null
