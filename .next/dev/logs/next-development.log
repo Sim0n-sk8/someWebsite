@@ -1,7 +1,138 @@
-[00:00:00.643] Server  LOG      ✓ Ready in 470ms
-[00:00:05.683] Server  LOG      ○ Compiling / ...
-[00:00:07.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.541] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/work2.png" "received" null
-[00:00:07.542] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/work3.png" "received" null
-[00:00:07.543] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/work1.png" "received" null
-[00:00:07.553] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/hero-image.png" "received" null
+[00:00:00.631] Server  LOG      ✓ Ready in 462ms
+[00:00:07.232] Server  LOG      ○ Compiling / ...
+[00:00:08.237] Server  ERROR    ⨯ ./app/page.tsx:2:20
+Ecmascript file had an error
+  1 | // pages/index.tsx
+> 2 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  3 | import Image from "next/image";
+  4 | import Head from "next/head";
+  5 | import Link from "next/link";
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/page.tsx:2:10
+Ecmascript file had an error
+  1 | // pages/index.tsx
+> 2 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  3 | import Image from "next/image";
+  4 | import Head from "next/head";
+  5 | import Link from "next/link";
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:00:08.249] Server  ERROR    ⨯ ./app/page.tsx:2:20
+Ecmascript file had an error
+  1 | // pages/index.tsx
+> 2 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  3 | import Image from "next/image";
+  4 | import Head from "next/head";
+  5 | import Link from "next/link";
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/page.tsx:2:10
+Ecmascript file had an error
+  1 | // pages/index.tsx
+> 2 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  3 | import Image from "next/image";
+  4 | import Head from "next/head";
+  5 | import Link from "next/link";
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:00:09.243] Browser ERROR   uncaughtError: Error: ./app/page.tsx:2:20
+Ecmascript file had an error
+  1 | // pages/index.tsx
+> 2 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  3 | import Image from "next/image";
+  4 | import Head from "next/head";
+  5 | import Link from "next/link";
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:00:09.465] Browser ERROR   ./app/page.tsx:2:20
+Ecmascript file had an error
+  1 | // pages/index.tsx
+> 2 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  3 | import Image from "next/image";
+  4 | import Head from "next/head";
+  5 | import Link from "next/link";
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:09.465] Browser ERROR   ./app/page.tsx:2:10
+Ecmascript file had an error
+  1 | // pages/index.tsx
+> 2 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  3 | import Image from "next/image";
+  4 | import Head from "next/head";
+  5 | import Link from "next/link";
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:09.465] Browser ERROR   ./app/page.tsx:2:20
+Ecmascript file had an error
+  1 | // pages/index.tsx
+> 2 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  3 | import Image from "next/image";
+  4 | import Head from "next/head";
+  5 | import Link from "next/link";
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:09.466] Browser ERROR   ./app/page.tsx:2:10
+Ecmascript file had an error
+  1 | // pages/index.tsx
+> 2 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  3 | import Image from "next/image";
+  4 | import Head from "next/head";
+  5 | import Link from "next/link";
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:38.762] Server  LOG      ✓ Compiled in 72ms
+[00:00:39.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:39.751] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/work3.png" "received" null
+[00:00:39.752] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/work2.png" "received" null
+[00:00:39.753] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/work1.png" "received" null
+[00:00:39.753] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/hero-image.png" "received" null

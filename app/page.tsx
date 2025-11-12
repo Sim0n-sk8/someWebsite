@@ -1,9 +1,26 @@
-// pages/index.js
+"use client"
+
+
+
+// pages/index.tsx
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Home() {
+const Home = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroHeight = document.getElementById("hero")?.offsetHeight || 0;
+      setShowNav(window.scrollY > heroHeight - 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="container">
       <Head>
@@ -15,7 +32,7 @@ export default function Home() {
       </Head>
 
       {/* HEADER / NAV */}
-      <header className="header">
+      <header className={`header ${showNav ? "visible" : ""}`}>
         <div className="logo">SoME</div>
         <nav className="nav">
           <Link href="#services">Services</Link>
@@ -28,7 +45,7 @@ export default function Home() {
       </header>
 
       {/* HERO / LANDING */}
-      <section className="hero">
+      <section id="hero" className="hero">
         <div className="hero-text">
           <h1>Modern Social Media & Web Solutions</h1>
           <p>We help businesses grow online with stunning websites and social media management.</p>
@@ -136,4 +153,6 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+};
+
+export default Home;
